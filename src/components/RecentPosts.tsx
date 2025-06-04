@@ -3,66 +3,74 @@ export const RecentPosts = () => {
   const recentPosts = [
     {
       id: 1,
-      title: "How Often Should You Detail Your Car?",
-      excerpt: "Professional recommendations for maintaining your vehicle's appearance and protecting its value through regular detailing schedules.",
+      title: "Optimal Detailing Frequency: Professional Recommendations",
+      excerpt: "Expert guidance on establishing the perfect maintenance schedule to preserve your vehicle's appearance and maximize its resale value.",
       date: "June 3, 2024"
     },
     {
       id: 2,
-      title: "Eco-Friendly Car Care: Steam vs Traditional Methods",
-      excerpt: "Compare the environmental impact of steam cleaning versus traditional car wash methods and why it matters.",
+      title: "Sustainable Car Care: Steam vs Traditional Washing Methods",
+      excerpt: "An in-depth analysis of environmental benefits and superior cleaning performance of steam technology compared to conventional methods.",
       date: "June 2, 2024"
     },
     {
       id: 3,
-      title: "Interior Detailing: Beyond Just Cleaning",
-      excerpt: "Discover the comprehensive approach to interior detailing that includes sanitization, protection, and restoration.",
+      title: "Complete Interior Restoration: Beyond Surface Cleaning",
+      excerpt: "Comprehensive interior care including deep sanitization, protection treatments, and restoration techniques for lasting results.",
       date: "May 30, 2024"
     },
     {
       id: 4,
-      title: "Paint Protection: Ceramic Coatings Explained",
-      excerpt: "Everything you need to know about ceramic coatings and how they provide long-lasting protection for your vehicle's paint.",
+      title: "Advanced Paint Protection: Ceramic Coating Mastery",
+      excerpt: "Complete guide to ceramic coating applications and their long-term benefits for maintaining your vehicle's pristine finish.",
       date: "May 29, 2024"
     },
     {
       id: 5,
-      title: "The Ultimate Guide to Car Wash Preparation",
-      excerpt: "Essential steps to prepare your vehicle for professional detailing to ensure the best possible results.",
+      title: "Pre-Service Preparation: Maximizing Detailing Results",
+      excerpt: "Essential preparation steps to ensure optimal outcomes from your professional detailing service appointment.",
       date: "May 27, 2024"
     }
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Recent Posts</h3>
-          <p className="text-lg text-gray-600">Stay updated with our latest insights and tips</p>
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-emerald-50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <div className="inline-block mb-4">
+            <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase">
+              Latest Updates
+            </span>
+          </div>
+          <h3 className="text-4xl font-bold text-gray-900 mb-4">Recent Articles</h3>
+          <p className="text-xl text-gray-600">Stay informed with our latest automotive care insights</p>
         </div>
         
-        <div className="space-y-6">
+        <div className="space-y-8">
           {recentPosts.map((post) => (
-            <article key={post.id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                <h4 className="text-xl font-semibold text-gray-900 hover:text-blue-600 cursor-pointer transition-colors">
+            <article key={post.id} className="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-emerald-100">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                <h4 className="text-2xl font-bold text-gray-900 group-hover:text-emerald-600 cursor-pointer transition-colors duration-300 flex-1">
                   {post.title}
                 </h4>
-                <span className="text-sm text-gray-500 mt-1 sm:mt-0">{post.date}</span>
+                <span className="text-sm text-emerald-600 font-semibold bg-emerald-50 px-3 py-1 rounded-full mt-2 sm:mt-0 sm:ml-4 whitespace-nowrap">
+                  {post.date}
+                </span>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-600 leading-relaxed mb-6 text-lg">
                 {post.excerpt}
               </p>
-              <button className="text-blue-600 hover:text-blue-800 font-semibold transition-colors">
-                Read More →
+              <button className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold transition-colors group">
+                Continue Reading 
+                <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
               </button>
             </article>
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-            View All Posts
+        <div className="text-center mt-16">
+          <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-10 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            Explore All Articles
           </button>
         </div>
       </div>
