@@ -1,4 +1,3 @@
-
 export const Hero = () => {
   return (
     <section 
@@ -12,7 +11,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1570464197285-9949814674a7?auto=format&fit=crop&w=1920&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=1920&q=80')"
         }}
       ></div>
 
